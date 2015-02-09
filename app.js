@@ -9,11 +9,19 @@
 var mosca = require('mosca');
 
 
-var pubsubsettings = {
+/*var pubsubsettings = {
   type: 'mongo',
   url: 'mongodb://localhost:27017/mqttbox',
   pubsubCollection: 'mqttbuffer',
   mongo: {}
+};*/
+
+var pubsubsettings = {
+  type: 'redis',
+  redis: require('redis'),
+  port: 6379,
+  return_buffers: true, // to handle binary payloads
+  host: "localhost"
 };
 
 
