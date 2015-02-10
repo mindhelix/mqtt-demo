@@ -1,5 +1,5 @@
 {
-  "name": "mosca-server",
+  "name": "mosca-client",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -9,8 +9,6 @@
   "author": "Jinsu Mathew <jinsu@mindhelix.com>",
   "license": "ISC",
   "dependencies": {
-    "hiredis": "^0.2.0",
-    "mosca": "^0.26.2",
-    "redis": "^0.12.1"
+    "mqtt": "^1.0.3"
   }
 }
